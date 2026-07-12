@@ -1,0 +1,70 @@
+{
+    "programming_languages": [
+        "python", "java", "javascript", "typescript", "c++", "c#", "ruby",
+        "go", "rust", "swift", "kotlin", "php", "scala", "r", "matlab",
+        "perl", "dart", "lua", "haskell", "elixir", "clojure", "objective-c",
+        "shell", "bash", "powershell", "sql", "html", "css", "sass", "less"
+    ],
+    "frameworks_and_libraries": [
+        "react", "angular", "vue", "django", "flask", "fastapi", "spring",
+        "express", "node.js", "next.js", "nuxt.js", "svelte", "tailwind",
+        "bootstrap", "jquery", "redux", "graphql", "rest", "asp.net",
+        "rails", "laravel", "symfony", "gin", "fiber", "actix",
+        "tensorflow", "pytorch", "keras", "scikit-learn", "pandas", "numpy",
+        "matplotlib", "seaborn", "plotly", "streamlit", "gradio",
+        "spring boot", "hibernate", ".net", "blazor", "electron"
+    ],
+    "databases": [
+        "mysql", "postgresql", "mongodb", "redis", "elasticsearch",
+        "sqlite", "oracle", "sql server", "cassandra", "dynamodb",
+        "firebase", "supabase", "neo4j", "couchdb", "mariadb",
+        "influxdb", "timescaledb", "cockroachdb", "snowflake", "bigquery"
+    ],
+    "cloud_and_devops": [
+        "aws", "azure", "gcp", "google cloud", "docker", "kubernetes",
+        "terraform", "ansible", "jenkins", "github actions", "gitlab ci",
+        "circleci", "travis ci", "heroku", "vercel", "netlify",
+        "cloudflare", "nginx", "apache", "linux", "ci/cd", "devops",
+        "microservices", "serverless", "lambda", "ec2", "s3", "rds",
+        "ecs", "eks", "aks", "gke", "helm", "prometheus", "grafana",
+        "datadog", "splunk", "new relic", "vagrant", "pulumi"
+    ],
+    "data_science_and_ml": [
+        "machine learning", "deep learning", "natural language processing",
+        "nlp", "computer vision", "data analysis", "data visualization",
+        "statistics", "a/b testing", "feature engineering", "model deployment",
+        "mlops", "data pipeline", "etl", "data warehouse", "data lake",
+        "hadoop", "spark", "airflow", "dbt", "tableau", "power bi",
+        "looker", "jupyter", "neural networks", "transformers", "bert",
+        "gpt", "llm", "rag", "langchain", "hugging face", "opencv"
+    ],
+    "tools_and_platforms": [
+        "git", "github", "gitlab", "bitbucket", "jira", "confluence",
+        "slack", "trello", "asana", "notion", "figma", "sketch",
+        "adobe xd", "postman", "swagger", "vs code", "intellij",
+        "vim", "emacs", "webpack", "vite", "npm", "yarn", "pip",
+        "conda", "poetry", "make", "cmake", "gradle", "maven"
+    ],
+    "soft_skills": [
+        "leadership", "communication", "teamwork", "problem solving",
+        "critical thinking", "time management", "project management",
+        "agile", "scrum", "kanban", "mentoring", "collaboration",
+        "presentation", "negotiation", "conflict resolution",
+        "decision making", "adaptability", "creativity", "innovation",
+        "strategic thinking", "stakeholder management", "cross-functional",
+        "self-motivated", "detail-oriented", "analytical", "research"
+    ],
+    "certifications": [
+        "aws certified", "azure certified", "gcp certified",
+        "pmp", "scrum master", "cissp", "ceh", "comptia",
+        "itil", "six sigma", "google analytics", "hubspot",
+        "salesforce", "oracle certified", "cisco certified",
+        "kubernetes certified", "cka", "ckad", "terraform certified"
+    ],
+    "security": [
+        "cybersecurity", "penetration testing", "vulnerability assessment",
+        "soc", "siem", "firewall", "encryption", "oauth", "jwt",
+        "saml", "sso", "rbac", "zero trust", "devsecops", "owasp",
+        "compliance", "gdpr", "hipaa", "pci dss", "iso 27001"
+    ]
+}

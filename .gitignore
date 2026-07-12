@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Logs
+logs/*.log
+
+# Uploads
+uploads/
+
+# Environment variables
+.env
+.env.local
+
+# NLTK data (downloaded at runtime)
+nltk_data/
+
+# Streamlit (keep config.toml — it hides auto page nav and sets the theme)
+.streamlit/secrets.toml
