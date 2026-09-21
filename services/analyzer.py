@@ -20,6 +20,7 @@ from utils.constants import (
     SUGGESTION_TEMPLATES,
 )
 from utils.logger import get_logger
+from utils.term_matching import contains_term
 from utils.text_processing import (
     clean_text,
     compute_cosine_similarity,
@@ -60,12 +61,12 @@ def _match_skills(
         display_name = CATEGORY_DISPLAY_NAMES.get(category_key, category_key)
 
         # Only evaluate skills that the job description mentions
-        relevant_skills = [s for s in skills if s.lower() in job_clean]
+        relevant_skills = [s for s in skills if contains_term(job_clean, s)]
         if not relevant_skills:
             continue
 
-        matched = [s for s in relevant_skills if s.lower() in resume_clean]
-        missing = [s for s in relevant_skills if s.lower() not in resume_clean]
+        matched = [s for s in relevant_skills if contains_term(resume_clean, s)]
+        missing = [s for s in relevant_skills if not contains_term(resume_clean, s)]
         score = (len(matched) / len(relevant_skills) * 100) if relevant_skills else 0
 
         categories.append(
@@ -225,8 +226,8 @@ def analyze_resume(resume_text: str, job_description: str) -> AnalysisResult:
     job_keywords = extract_keywords(job_description, top_n=40)
     resume_clean = clean_text(resume_text)
 
-    matched_keywords = [kw for kw in job_keywords if kw in resume_clean]
-    missing_keywords = [kw for kw in job_keywords if kw not in resume_clean]
+    matched_keywords = [kw for kw in job_keywords if contains_term(resume_clean, kw)]
+    missing_keywords = [kw for kw in job_keywords if not contains_term(resume_clean, kw)]
 
     keyword_score = (
         (len(matched_keywords) / len(job_keywords) * 100) if job_keywords else 0

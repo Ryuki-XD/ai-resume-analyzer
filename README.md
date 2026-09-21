@@ -62,6 +62,15 @@ AI RESUME ANALYZER/
 
 ---
 
+## Matching and regression checks
+
+Skill and keyword matching uses whole terms, so JavaScript does not count as
+Java and unrelated words do not count as R or C. Names such as C++ and C# are
+matched literally. This is text matching, not a guarantee of an employer's ATS result.
+
+Run `python -m unittest discover -s tests -v` from the repository root to check
+term matching; these checks need only Python's standard library.
+
 ## 🚀 Installation
 
 ### Prerequisites
